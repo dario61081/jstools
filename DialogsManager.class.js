@@ -21,6 +21,10 @@ class DialogsManager {
             icon: 'alert',
             confirmButtonText: "Aceptar"
         });
+        this.info = Swal.mixin({
+            icon: 'info',
+            confirmButtonText: "Aceptar"
+        });
     }
 
 
@@ -38,6 +42,10 @@ class DialogsManager {
 
     showAlert() {
         return this.alert;
+    }
+
+    showInfo() {
+        return this.info;
     }
 }
 
